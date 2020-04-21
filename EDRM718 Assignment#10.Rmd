@@ -30,7 +30,6 @@ ELA2
 ```
 ###2.Write a script to provide summary statistics for the number of tardies and absences for each room.calcualte the statistics summary for Tardies and absences by Room
 ```{r}
-library(dplyr)
 summary.stats <- ELA2 %>%
   group_by(Room) %>%
   summarize(T_mean = mean(Tardies),
